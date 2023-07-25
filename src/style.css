@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+font-family: "Red Hat Display",sans-serif;
+font-size: .78rem;
+font-weight: 400;
+color: #000;
+margin-bottom: 4%;
+}
+
+.container-fluid {
+  overflow-x: hidden;
+}
+
+
+.col-md-auto {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display",sans-serif;
+font-size: .78rem;
+font-weight: 400;
+color: #000;
+}
+
+.col-md-auto:first-child img {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100vh;
+  width: auto;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+#password-error, #email-error {
+  text-align: left!important;
+  color: #b00020;
+}
+#password-error img,
+#email-error img {
+  margin-left: 0!important;
+}
+
+
+/* Logo and Card */
+
+.text-center {
+  margin:10px;
+  font-weight: 400;
+}
+
+
+.text-center img {
+  max-height: 100px;
+  margin-left: 26%;
+}
+
+.card {
+  max-width: 500px;
+  width: 150%;
+  margin: 0;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 0.90rem;
+  background-color: white;
+  border-left: 30%;
+  border-right: 30%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color:rgb(83, 83, 83);
+  outline-color: rgb(83, 83, 83);
+}
+
+.bg-primary {
+  background-color: #00369c!important;
+  border-radius: 16px 16px 0 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: 0px;
+  margin-left:-3.27rem;
+  margin-right:-3.27rem;
+  margin-top:-1.5rem
+}
+.card-body {
+  font-size: 0.90rem;
+  
+}
+.card h4{
+  font-size: 0.90rem;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 4%;
+  white-space: nowrap;
+}
+.card p {
+  margin-bottom: 0;
+}
+
+label {
+  width: 100%;
+  text-align: left;
+  color: #000;
+}
+
+.card input[type="email"],
+.card input[type="password"]{
+  border-radius: 0px;
+  border-style: none none solid none;
+  border-color: #000000;
+  border-width: 0 0 1px 0;
+  height: 50px;
+}
+
+.card input[type="text"]{
+  border-radius: 0px;
+  border-style: none none solid none;
+  border-color: #000;
+  border-width: 0 0 1px 0;
+  height: 50px;
+
+}
+
+.card input[type="email"]:focus,
+.card input[type="password"]:focus
+.card input[type="text"]:focus {
+  box-shadow: none;
+  border-color: #007bff;
+}
+
+.visibility-button {
+  border-radius: 0px;
+  border-style: none none solid none;
+  border-color: #000000;
+  border-width: 0 0 1px 0;
+}
+
+
+.card button[type="submit"] {
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  display: block;
+  border-radius: 30px;
+  width:50%;
+  height: 48px;
+  font-size: 0.90rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-left:50%;
+  padding: .375rem .75rem;
+  background-color: #00369c;
+  color:#ffffff;
+}
+
+#login-button{
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  display: block;
+  border-radius: 30px;
+  width:50%;
+  height: 48px;
+  font-size: 0.90rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-left:50%;
+  padding: .375rem .75rem;
+  background-color: #00369c;
+  color:#ffffff;
+}
+
+#login-button:disabled{
+  background-color: rgb(177,177,176);
+  border-color: #ffffff;
+  color: #f8f9fa;
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+
+.card button[type="submit"]:disabled {
+  background-color: rgb(177,177,176);
+  border-color: #ffffff;
+  color: #f8f9fa;
+  cursor: not-allowed;
+  opacity: .65;
+
+}
+
+a {
+  color:#00369c;
+}
+
+/* Small Image */
+.col-md-auto:last-child img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50%;
+  width: auto;
+}
+
+
+/* Hide Large Image and Small Image on Smaller Screens */
+@media only screen and (max-width: 1500px) {
+  .col-md-auto:first-child,
+  .col-md-auto:last-child {
+    display: none;
+  }
+  .text-center{
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+  .card{
+    width: 150%;
+    min-width: 200px;
+  }
+  .text-center img{
+    margin-left: auto;
+  }
+  .col-md-auto{
+    width: 100%!important;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .card{
+    padding-left: 0;
+    padding-right: 0;
+    width: auto;
+  }
+  .bg-primary{
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .col-md-auto{
+    width: auto;
+  }
+}
+
